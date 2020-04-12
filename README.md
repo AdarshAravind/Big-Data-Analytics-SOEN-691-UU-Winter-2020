@@ -22,7 +22,7 @@ To achieve this goal, we chose “Human Activity Recognition Using Smartphones D
 #### 1.1 RELATED WORK
 Min et al [6] design two models, in which one uses only acceleration sensor data and the other uses the location information in addition to acceleration sensor data. The model with location information shows an accuracy of 95% and the model without location information does 90% accuracy.
 
-Erhanet al [7] proposes several supervised machine learning algorithms such as Decision trees, Support Vector Machines, K-nearest neighbours (KNN) and ensemble classification methods such as Boosting, Bagging and Stacking.
+Erhanet al [7] proposes several supervised machine learning algorithms such as Decision trees, Support Vector Machines, K-nearest neighbors (KNN) and ensemble classification methods such as Boosting, Bagging and Stacking.
 
 Akram et al [8] analyze different activities of a person, using which a classification model is built based on feature selection. In Weka toolkit, Multilayer Perceptron, Random forest, LMT, SVM, Simple Logistic and LogitBoost are compared as an individual and combined classifiers then it was validated using K-fold cross-validation.
 
@@ -44,7 +44,7 @@ The six activities performed were “WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAI
  
 #### 2.2 ALGORITHMS:
 The project is implemented in python using 3 supervised machine learning algorithms: Logistic Regression, KNN, and Random Forest using scikit-learn library.
-- KNN: An object is classified by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors. If k = 1, then the object is simply assigned to the class of that single nearest neighbour.
+- KNN: An object is classified by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors. If k = 1, then the object is simply assigned to the class of that single nearest neighbor.
 - Random Forest: It is an ensemble learning method for classification that operates by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes of the individual trees.
 
 #### 2.3 TECHNOLOGIES:
@@ -95,7 +95,7 @@ As our main goal in this project was to build a model that would classify the hu
 
 Accuracy, precisio, recall, and f1_score for the 3 models (Logistic Regression, K-nearest Neighbors, and Random Forest) are below:
 
-|Machine Learning Algorithm|Train Accuracy|Test Accuracy|Precision|Recall  |f1_sscore|
+|Machine Learning Algorithm|Train Accuracy|Test Accuracy|Precision|Recall  |f1_score |
 |:------------------------:|:------------:|:-----------:|:-------:|:------:|:-------:|
 |K-nearest Neighbors       |0.969124      |0.914489     |0.916370 |0.914489|0.914102 | 
 |Random Forest             |0.937296      |0.841534     |0.862797 |0.841534|0.836698 |
@@ -141,7 +141,7 @@ As the majority of the misclassification classification is from labels standing,
 It is also worth noting that, walking_upstairs and walking_downstairs class instances in the training data are relatively less compared to other class labels, this little data imbalance may also have contributed to misclassification.
 
 #### 4.2 DRAWBACKS: 
-Given KNN and Random Forest model accuracies in this project, these models cannot be directly integrated into any hardware system to have real-time and perfect results. 
+Given the KNN and Random Forest model accuracies in this project, these models cannot be directly integrated into any hardware system to have real-time and perfect results. 
 
 #### 4.2 FUTURE WORK:
 -	A larger set of data, especially with a wider range of participants, could help the algorithm learn more of these variations and lead to significant model improvements. And, in the future, we would like to integrate trained models into hardware systems and get the live results and see the model in action which helps monitor health. 
