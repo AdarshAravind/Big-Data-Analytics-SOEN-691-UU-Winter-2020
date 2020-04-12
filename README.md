@@ -98,7 +98,7 @@ Incase of KNN, the hyperparameter is n_neighbors, and in the case of Random Fore
 #### 3.5 EVALUATION METRICS:
 As our main goal in this project was to build a model that would classify the human activities correctly into 6 different types, accuracy, precision, recall, and f1_score was considered as the evaluation metric. The dataset was split into 70% training data and 30% testing data. As this simulates real-world usage and is a reasonable approach, no further changes were made. 
 
-Accuracy, precisio, recall, and f1_score for the 3 models (Logistic Regression, K-nearest Neighbors, and Random Forest) are below:
+Accuracy, precision, recall, and f1_score for the 3 models (Logistic Regression, K-nearest Neighbors, and Random Forest) are below:
 
 |Machine Learning Algorithm|Train Accuracy|Test Accuracy|Precision|Recall  |f1_score |
 |:------------------------:|:------------:|:-----------:|:-------:|:------:|:-------:|
