@@ -61,6 +61,7 @@ We have followed a bunch of preprocessing steps to refine this dataset including
   <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/DataPreprocessing.png">
 </p>
 
+
 #### 3.2 RANDOM FEATURE DISTRIBUTION:
 
 <p align="center">
@@ -68,11 +69,13 @@ We have followed a bunch of preprocessing steps to refine this dataset including
 </p>
 
 
+
 #### 3.3 TRAINING DATA CLASS LABEL DISTRIBUTION:
 
 <p align="center">
   <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/Training%20data%20class%20label%20distribution.png">
 </p>
+
 
 #### 3.4 MODEL TRAINING (Grid Search - Hyperparameter fine-tuning):
 We used GridSearch with cross-validation 3 fold to tune hyperparameters for both KNN and Random Forest. 
@@ -84,11 +87,13 @@ Incase of KNN, the hyperparameter is n_neighbors, and in the case of Random Fore
   <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/Grid%20Search%20KNN.png">
 </p>
 
+
 ###### Random Forest:
 
 <p align="center">
   <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/Grid%20Search%20Random%20Forest.png">
 </p>
+
 
 #### 3.5 EVALUATION METRICS:
 As our main goal in this project was to build a model that would classify the human activities correctly into 6 different types, accuracy, precision, recall, and f1_score was considered as the evaluation metric. The dataset was split into 70% training data and 30% testing data. As this simulates real-world usage and is a reasonable approach, no further changes were made. 
@@ -107,6 +112,7 @@ Random Forest performed reasonably well with 84.15% accuracy on the test data wi
   <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/RandomForestConfusionMetric.png">
 </p>
 
+
 Logistic Regression gave a small improvement in the accuracy of the test data to 89.88% with 92.27% precision, 89.88% recall, 89.5% f1_score and it has learned the train data very well but suffers a performance drop when looking at the test data. 
 
 The K-nearest Neighbors performed the best with 91.44% test accuracy, 91.6% precision, 91.45% recall, 91.4% f1_score and a confusion matrix for KNN is below for the same:
@@ -115,7 +121,8 @@ The K-nearest Neighbors performed the best with 91.44% test accuracy, 91.6% prec
   <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/KNNConfusionMetric.png">
 </p>
 
-#### 3.6 CLASSIFICATOIN REPORT: 
+
+#### 3.6 CLASSIFICATION REPORT: 
 The classification report for KNN model and Random Forest model is given below, 
 
 ###### KNN:
@@ -124,11 +131,13 @@ The classification report for KNN model and Random Forest model is given below,
   <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/Classification%20report%20KNN.png">
 </p>
 
+
 ###### Random Forest:
 
 <p align="center">
   <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/Classification%20report%20Random%20forest.png">
 </p>
+
 
 ## 4. DISCUSSION:
 #### 4.1 RESULTS INTERPRETATION:
