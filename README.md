@@ -56,25 +56,39 @@ The technologies that we mainly used in this project are python, pandas, matplot
 ## 3. RESULTS:
 #### 3.1 DATA PREPROCESSING: 
 We have followed a bunch of preprocessing steps to refine this dataset including Elimination of duplicate values, Removing null values, Scaling the features between the range [-1, 1], Feature selection, Removing outliers, Data visualization, Class labels balance check.
-![](images/DataPreprocessing.png)
+
+<p align="center">
+  <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/DataPreprocessing.png">
+</p>
 
 #### 3.2 RANDOM FEATURE DISTRIBUTION:
 
-![](images/Random%20feature%20distribution.png)
+<p align="center">
+  <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/Random%20feature%20distribution.png">
+</p>
+
 
 #### 3.3 TRAINING DATA CLASS LABEL DISTRIBUTION:
 
-![](images/Training%20data%20class%20label%20distribution.png)
+<p align="center">
+  <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/Training%20data%20class%20label%20distribution.png">
+</p>
 
 #### 3.4 MODEL TRAINING (Grid Search - Hyperparameter fine-tuning):
 We used GridSearch with cross-validation 3 fold to tune hyperparameters for both KNN and Random Forest. 
 Incase of KNN, the hyperparameter is n_neighbors, and in the case of Random Forest, the hyperparameters are Max_depth and N_estimators. We chose a range of values for all 3 hyperparameters and ran grid search with 3 fold cross-validation.
 
 ###### K-nearest neighbors:
-![](images/Grid%20Search%20KNN.png) 
+
+<p align="center">
+  <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/Grid%20Search%20KNN.png">
+</p>
 
 ###### Random Forest:
-![](images/Grid%20Search%20Random%20Forest.png) 
+
+<p align="center">
+  <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/Grid%20Search%20Random%20Forest.png">
+</p>
 
 #### 3.5 EVALUATION METRICS:
 As our main goal in this project was to build a model that would classify the human activities correctly into 6 different types, accuracy, precision, recall, and f1_score was considered as the evaluation metric. The dataset was split into 70% training data and 30% testing data. As this simulates real-world usage and is a reasonable approach, no further changes were made. 
@@ -89,22 +103,32 @@ Accuracy, precisio, recall, and f1_score for the 3 models (Logistic Regression, 
 
 Random Forest performed reasonably well with 84.15% accuracy on the test data with 86.3% precision, 84% recall and 83.67% f1_score. A significant performance drop can be seen moving from training data to the test data. Confusion metrics for Random Forest is given below:
 
-![](images/RandomForestConfusionMetric.png)
+<p align="center">
+  <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/RandomForestConfusionMetric.png">
+</p>
 
 Logistic Regression gave a small improvement in the accuracy of the test data to 89.88% with 92.27% precision, 89.88% recall, 89.5% f1_score and it has learned the train data very well but suffers a performance drop when looking at the test data. 
 
 The K-nearest Neighbors performed the best with 91.44% test accuracy, 91.6% precision, 91.45% recall, 91.4% f1_score and a confusion matrix for KNN is below for the same:
 
-![](images/KNNConfusionMetric.png)
+<p align="center">
+  <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/KNNConfusionMetric.png">
+</p>
 
 #### 3.6 CLASSIFICATOIN REPORT: 
 The classification report for KNN model and Random Forest model is given below, 
 
 ###### KNN:
-![](images/Classification%20report%20KNN.png)
+
+<p align="center">
+  <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/Classification%20report%20KNN.png">
+</p>
 
 ###### Random Forest:
-![](images/Classification%20report%20Random%20forest.png)
+
+<p align="center">
+  <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/Classification%20report%20Random%20forest.png">
+</p>
 
 ## 4. DISCUSSION:
 #### 4.1 RESULTS INTERPRETATION:
@@ -125,10 +149,17 @@ Given KNN and Random Forest model accuracies in this project, these models canno
 
 ## REFERENCES:
 1.	Anguita D, Ghio A, Oneto L, et al. A public domain dataset for human activity recognition using smartphones[C]//Esann. 2013.
+
 2.	Anguita D, Ghio A, Oneto L, et al. Human activity recognition on smartphones using a multiclass hardware-friendly support vector machine[C]//International workshop on ambient assisted living. Springer, Berlin, Heidelberg, 2012: 216-223.
-3.	https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+3.	Dataset from UCI repository, https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
 4.	How to Model Human Activity From Smartphone Data by Jason Brownlee on September 17, 2018 in Deep Learning for Time Series
+
 5.	Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
+
 6.	Min-CheolKwonandSunwoongChoi, “Recognition  of  Daily  Human Activity  Using  an  Artificial  Neural  Network  and  Smart  watch”,Wireless Communications and Mobile Computing, 2018.
+
 7.	Erhan BÜLBÜL, Aydın Çetin and İbrahim Alper DOĞRU, “Human Activity  Recognition  Using  Smartphones”,  IEEE,  978-1-5386-4184, 2018
+
 8.	Akram Bayat∗, Marc Pomplun, Duc A. Tran, “A Study on Human Activity Recognition Using Accelerometer Data from Smartphones”, Department of Computer Science, University of Massachusetts, Boston, 100 Morrissey Blvd Boston, MA 02125, USA, Elsevier Procedia  Computer Science,Vol 34, 450 -457 ,2014.
