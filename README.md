@@ -12,7 +12,7 @@
 
 ## *ABSTRACT*
 
-*Wearable devices like smartphones, smartwatches which have many potential applications in health monitoring, activity tracking, and personal assistance are being increasingly used to monitor and keep track of human activities. The data collected from these devices are processed using machine-learning algorithms for the classification of human activity. The results obtained from these algorithms are dependent on the availability of data (if it’s available for public use). In our work, we present a dataset of Human Activity Recognition Using Smartphone Dataset from UCI repository to predict the labels such as “WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING”. The dataset has captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz, containing 561-feature vector with time and frequency domain variables and six labels. The goal of this project is to train the model, interpret and discuss the results of the data analysis with various metrics such as accuracy rate, F1 score, precision, and recall.* 
+*Wearable devices like smartphones, smartwatches which have many potential applications in health monitoring, activity tracking, and personal assistance are being increasingly used to monitor and keep track of human activities. The data collected from these devices are processed using machine-learning algorithms for the classification of human activity. The results obtained from these algorithms are dependent on the availability of data (if it’s available for public use). In our work, we present a dataset of Human Activity Recognition Using Smartphone Dataset from UCI repository to predict the labels such as “WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING”. The dataset has captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz, containing 561-feature vector with time and frequency domain variables and six labels. The goal of this project is to train the model, interpret and discuss the results of the data analysis with various metrics such as accuracy rate, f1_score, precision, and recall.* 
 
 ## 1. INTRODUCTION:
 Human Activity Recognition is the problem of predicting a person's activity based on a trace of their movement using smartphone sensors [1]. Movements are often normal indoor activities such as “Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing, Laying”. Sensors are often located on the subject, such as a smartphone or vest, and often record accelerometer data in three dimensions (x, y, z). Human activity recognition is a hotspot in the area of machine learning and pervasive computing and it is widely applied in healthcare. Human activity recognition can be divided into two categories by the method of data collection: Human activity recognition based on computer vision and based on wearable devices (accelerometer and gyroscope motion sensors). Activity recognition based on wearable sensors has become more popular, because it can be conducted without the limitation of time, location, etc. Human Activity Recognition can be accomplished by exploiting the information retrieved from various sources such as environmental or body-worn sensors. The idea is that once the subject’s activity is recognized and known, an intelligent computer system can then offer assistance [2].
@@ -31,7 +31,7 @@ By doing some research and studying the above-mentioned works, we believe that u
 ## 2. MATERIALS AND METHODS:
 #### 2.1 DATASET:
 
-‘Human Activity Recognition Using Smartphones’ dataset made available in 2012 from UCI [3]. This dataset includes 10299 instances, for each record in the dataset it is provided:
+[Human Activity Recognition Using Smartphones](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) dataset made available in 2012. This dataset includes 10299 instances, for each record in the dataset it is provided:
 -	Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 -	Triaxial Angular velocity from the gyroscope.
 -	A 561-feature vector with time and frequency domain variables.
@@ -152,7 +152,7 @@ Given the KNN and Random Forest model accuracies in this project, these models c
 
 2.	Anguita D, Ghio A, Oneto L, et al. Human activity recognition on smartphones using a multiclass hardware-friendly support vector machine[C]//International workshop on ambient assisted living. Springer, Berlin, Heidelberg, 2012: 216-223.
 
-3.	Dataset from UCI repository, https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+3.	https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 4.	How to Model Human Activity From Smartphone Data by Jason Brownlee on September 17, 2018 in Deep Learning for Time Series
 
