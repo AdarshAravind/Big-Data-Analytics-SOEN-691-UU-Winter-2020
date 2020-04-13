@@ -48,14 +48,14 @@ The project is implemented in python using 3 supervised machine learning algorit
 - Random Forest: It is an ensemble learning method for classification that operates by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes of the individual trees.
 
 #### 2.3 TECHNOLOGIES:
-The technologies that we mainly used in this project are python, pandas, matplotlib, and scikit-learn.
+The technologies that we mainly used in this project are python, pandas, matplotlib, seaborn, and scikit-learn.
 - Pandas: Library used for data manipulation.
 - Matplotlib: Data visualization library used for exploratory data analysis.
 - Scikit-learn: Scikit-learn is a machine learning library for Python. It has classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN. Scikit-learn integrates with other Python libraries like matplotlib and plotly for plotting, numpy for array vectorization, pandas dataframes, precision, recall, f1_score, scipy, MinMaxScaler, confusion_matrix.
 
 ## 3. RESULTS:
 #### 3.1 DATA PREPROCESSING: 
-We have followed a bunch of preprocessing steps to refine this dataset including Elimination of duplicate values, Removing null values, Scaling the features between the range [-1, 1], Feature selection, Removing outliers, Data visualization, Class labels balance check.
+We have followed a bunch of preprocessing steps to refine this dataset including Elimination of duplicate values, Imputing null values, Scaling the features between the range [-1, 1], Feature selection, Removing outliers, Data visualization, Class labels balance check.
 
 <p align="center">
   <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/DataPreprocessing.png">
