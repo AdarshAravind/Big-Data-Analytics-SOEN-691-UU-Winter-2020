@@ -72,8 +72,8 @@ Visualization to see if any outliers exist.
 
 
 #### 3.3 TRAINING DATA CLASS LABEL DISTRIBUTION:
+Visualization to see if any particular class data is imbalanced, but the class labels for this dataset is pretty much balanced.
 
-Visualization to see if any class instance is imbalance, but the class labels for this dataset is pretty much balanced.
 
 <p align="center">
   <img width="" height="" src="https://github.com/AdarshArvind/Big-Data-Analytics-SOEN-691-UU-Winter-2020/blob/master/images/Training%20data%20class%20label%20distribution.png">
